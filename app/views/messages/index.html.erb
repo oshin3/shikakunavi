@@ -1,12 +1,12 @@
-<h1>メッセージ一覧</h1>
+<h1>おすすめ資格一覧</h1>
 
 <% if @messages.any? %>
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>id</th>
-        <th>タイトル</th>
-        <th>メッセージ</th>
+        <th>ID</th>
+        <th>資格名</th>
+        <th>ひとことメッセージ</th>
       </tr>
     </thead>
     <tbody>
@@ -24,4 +24,4 @@
   </div>
 <% end %>
 
-<%= link_to '新規メッセージの投稿', new_message_path, class: "btn btn-primary" %>
+<%= link_to '新しく資格を投稿する', new_message_path, class: "btn btn-primary" %>
